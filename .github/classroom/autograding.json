@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "CS++ Arrays & Data Lab — mvn test",
+      "setup": "",
+      "run": "mvn -B -q test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}
