@@ -33,7 +33,7 @@ jobs:
 
       - name: 'findValue'
         id: findvalue
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'findValue'
           setup-command: 'mvn -B -q compile'
@@ -43,7 +43,7 @@ jobs:
 
       - name: 'replaceAll'
         id: replaceall
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'replaceAll'
           setup-command: 'mvn -B -q compile'
@@ -53,7 +53,7 @@ jobs:
 
       - name: 'mirrorHorizontal'
         id: mirrorhorizontal
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'mirrorHorizontal'
           setup-command: 'mvn -B -q compile'
@@ -63,7 +63,7 @@ jobs:
 
       - name: 'mirrorVertical'
         id: mirrorvertical
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'mirrorVertical'
           setup-command: 'mvn -B -q compile'
@@ -73,7 +73,7 @@ jobs:
 
       - name: 'rotate90CW'
         id: rotate90cw
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'rotate90CW'
           setup-command: 'mvn -B -q compile'
@@ -83,7 +83,7 @@ jobs:
 
       - name: 'invert'
         id: invert
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'invert'
           setup-command: 'mvn -B -q compile'
@@ -93,7 +93,7 @@ jobs:
 
       - name: 'threshold'
         id: threshold
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'threshold'
           setup-command: 'mvn -B -q compile'
@@ -103,7 +103,7 @@ jobs:
 
       - name: 'average'
         id: average
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'average'
           setup-command: 'mvn -B -q compile'
@@ -113,7 +113,7 @@ jobs:
 
       - name: 'countOccurrences'
         id: countoccurrences
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'countOccurrences'
           setup-command: 'mvn -B -q compile'
@@ -123,7 +123,7 @@ jobs:
 
       - name: 'blur3x3'
         id: blur3x3
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'blur3x3'
           setup-command: 'mvn -B -q compile'
@@ -132,7 +132,7 @@ jobs:
           max-score: 10
 
       - name: Autograding Reporter
-        uses: classroom-resources/autograding-grading-reporter@v1
+        uses: cs-plus-plus/autograding-grading-reporter@v1
         env:
           FINDVALUE_RESULTS: "${{steps.findvalue.outputs.result}}"
           REPLACEALL_RESULTS: "${{steps.replaceall.outputs.result}}"
