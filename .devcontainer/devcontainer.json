@@ -1,0 +1,32 @@
+{
+  "name": "Arrays & Data Lab - Java",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven"
+      ],
+      "settings": {
+        // Hide dot-folders (.github, .devcontainer, .vscode) so students only see their
+        // code. Turn off Copilot/AI chat: VS Code opens its Chat panel before these
+        // settings load, so hiding it is the only way it stays closed (students can
+        // turn it back on in Settings).
+        "files.exclude": { "**/.*": true },
+        "chat.disableAIFeatures": true,
+        "workbench.secondarySideBar.defaultVisibility": "hidden",
+        "java.compile.nullAnalysis.mode": "disabled"
+      }
+    }
+  },
+  "postCreateCommand": "mvn dependency:resolve -q"
+}
